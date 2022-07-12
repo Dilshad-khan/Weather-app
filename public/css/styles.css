@@ -1,0 +1,62 @@
+body {
+  color: gray;
+  margin: 0 auto;
+  width: 70%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header > div {
+  align-items: center;
+  display: flex;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+a {
+  margin-right: 5px;
+  text-decoration: none;
+  background-color: dimgrey;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+a:active {
+  margin-right: 5px;
+  text-decoration: none;
+  background-color: white;
+  color: dimgrey;
+}
+input {
+  padding: 8px;
+  outline: none;
+  border: 1px solid dimgrey;
+}
+button {
+  background-color: dimgrey;
+  color: white;
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid dimgrey;
+}
+
+footer {
+  font-size: 1.5rem;
+  border-top: 1px solid gray;
+  margin-top: 1rem;
+}
+
+img {
+  width: 250px;
+  margin: 10px 0 10px 0;
+}
