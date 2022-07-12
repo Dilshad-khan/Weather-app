@@ -7,6 +7,8 @@ const forcast = require("./utils/forcast");
 // path use to manipulate string path for us
 console.log(path.join(__dirname, "../public"));
 
+const port = process.env.PORT || 5000;
+
 const app = express();
 
 const publicDirecoty = path.join(__dirname, "../public");
@@ -92,6 +94,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(5000, () => {
-  console.log("Server is up and running");
+app.listen(port, () => {
+  console.log("Server is up and running", port);
 });
