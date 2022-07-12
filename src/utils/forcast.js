@@ -12,11 +12,12 @@ const forcast = (lat, long, callback) => {
     } else if (body.error) {
       callback(body.error.info);
     } else {
-      const { weather_descriptions, temperature, feelslike } = body.current;
+      const { weather_descriptions, temperature, feelslike, humidity } =
+        body.current;
 
       callback(
         undefined,
-        `${weather_descriptions[0]}.It is currently ${temperature} degress out. It feels like ${feelslike} degress out.`
+        `${weather_descriptions[0]}.It is currently ${temperature} degress out. It feels like ${feelslike} degress out. The humidity is ${humidity}%`
       );
     }
   });
